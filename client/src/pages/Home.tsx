@@ -13,9 +13,9 @@ const aromas = [
   { name: "Flor de Algodão", description: "Delicado, suave, aconchegante e limpo.", color: "#bca89b", image: "cotton", bestSeller: true, asset: "/manus-storage/aroma-flor-algodao_d21ba8c6.png" },
   { name: "Capim-Limão", description: "Cítrico, refrescante e energizante.", color: "#aebd62", image: "lemon", bestSeller: true, asset: "/manus-storage/aroma-capim-limao_818d5714.png" },
   { name: "Lavanda", description: "Suave, relaxante e clássico.", color: "#8b76a8", image: "lavender", asset: "/manus-storage/aroma-lavanda_4e2e233c.png" },
-  { name: "Lavanda Francesa", description: "Floral, elegante e envolvente.", color: "#80669f", image: "lavender-two", premium: true, asset: "/manus-storage/aroma-lavanda_4e2e233c.png" },
-  { name: "Figo Negro", description: "Intenso, sofisticado e marcante.", color: "#765a55", image: "fig", premium: true },
-  { name: "Mamãe e Bebê", description: "Suave, acolhedor e delicadamente confortável.", color: "#d8c2b2", image: "mamae-bebe" },
+  { name: "Lavanda Francesa", description: "Floral, elegante e envolvente.", color: "#80669f", image: "lavender-two", premium: true, asset: "/manus-storage/aroma-lavanda-francesa_500b7a47.png" },
+  { name: "Figo Negro", description: "Intenso, sofisticado e marcante.", color: "#765a55", image: "fig", premium: true, asset: "/manus-storage/aroma-figo-negro_d90a2ddc.png" },
+  { name: "Mamãe e Bebê", description: "Suave, acolhedor e delicadamente confortável.", color: "#d8c2b2", image: "mamae-bebe", asset: "/manus-storage/aroma-mamae-bebe_efe23ea5.png" },
 ];
 
 type CartItem = { id: string; name: string; volume: string; price: number; qty: number };
