@@ -679,3 +679,31 @@ h1 em, h2 em { color: #d7ba7b; font-style: italic; }
 .dark-wordmark span { font: 500 2rem 'Playfair Display', serif; letter-spacing: .1em; line-height: .85; }
 .dark-wordmark small { color: #d9c59f; font: .43rem 'DM Sans', sans-serif; letter-spacing: .18em; }
 @media (max-width: 720px) { .dark-wordmark span { font-size: 1.6rem; } .dark-wordmark small { font-size: .36rem; } }
+
+/* Objective offers and updated delivery message */
+.dark-section-head h2 em { color: #d9b46d; font-style: italic; }
+.offer-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin-bottom: 1.8rem; }
+.offer-cards article { display: flex; flex-direction: column; gap: .3rem; min-height: 178px; padding: 1rem; border: 1px solid #334d43; border-radius: .6rem; background: #0b1915; }
+.offer-cards article > span { color: #cda960; font: .58rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .07em; }
+.offer-cards article strong { color: #f6ead9; font: 500 1.55rem 'Playfair Display', serif; }
+.offer-cards article b { color: #e0b86d; font: 500 1.5rem 'Playfair Display', serif; }
+.offer-cards article small { min-height: 25px; color: #aeb9af; font-size: .66rem; }
+.offer-cards article button { display: inline-flex; align-items: center; gap: .35rem; width: fit-content; margin-top: auto; padding: 0; border: 0; background: none; color: #e0b76b; font-size: .66rem; font-weight: 700; }
+.offer-cards article button svg { width: 14px; }
+.offer-card-highlight { border-color: #c49b53 !important; background: linear-gradient(145deg, #172820, #0d1b16) !important; box-shadow: 0 8px 20px rgba(0,0,0,.15); }
+.offer-card-signature { background: linear-gradient(145deg, #1b3b31, #10231c) !important; }
+.offer-card-signature strong { font-size: 1.2rem !important; }
+.aromas-list-label { padding: .3rem 0 .8rem; }
+.aromas-list-label .dark-eyebrow { margin-bottom: 0; }
+.delivery-message { display: flex; align-items: center; justify-content: center; gap: .45rem; margin-top: 1.35rem; color: #aeb9af; font-size: .7rem; text-align: center; }
+.delivery-message svg { width: 16px; color: #d8b36a; }
+.delivery-message strong { color: #e0b86d; }
+.delivery-threshold { color: #cda960; font-size: .62rem; text-align: right; }
+.aroma-image-mamae-bebe { background-position: center; filter: sepia(.2) saturate(.65) brightness(1.12); }
+@media (max-width: 720px) {
+  .offer-cards { grid-template-columns: 1fr; gap: .6rem; }
+  .offer-cards article { min-height: 145px; }
+  .offer-cards article strong { font-size: 1.35rem; }
+  .offer-cards article b { font-size: 1.3rem; }
+  .delivery-message { align-items: flex-start; text-align: left; line-height: 1.45; }
+}
