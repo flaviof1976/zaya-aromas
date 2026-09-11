@@ -35,10 +35,11 @@ function AromaProductCard({ aroma, onAdd }: { aroma: (typeof aromas)[number]; on
       setQuantities({ small: 0, large: 0 });
     }
   };
+  const imagePosition = aroma.image === "bamboo" ? "35% 40%" : aroma.image === "clean" ? "70% 70%" : aroma.image === "cotton" ? "90% 90%" : aroma.image === "lemon" ? "20% 50%" : aroma.image === "lavender" || aroma.image === "lavender-two" ? "20% 20%" : aroma.image === "fig" ? "85% 35%" : "center";
   return (
     <article className="dark-aroma-card">
       <div className={`dark-aroma-image aroma-image-${aroma.image}`} style={aroma.asset ? { backgroundImage: `url(${aroma.asset})` } : undefined}>
-        {aroma.asset && <img src={aroma.asset} alt={`Aroma ${aroma.name} da Zaya Aromas Premium`} className="aroma-seo-image" />}
+        {aroma.asset && <img src={aroma.asset} alt={`Aroma ${aroma.name} da Zaya Aromas Premium`} className="aroma-seo-image" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: imagePosition }} />}
         <span className="aroma-image-overlay" />
       </div>
       <div className="dark-aroma-body"><div className="dark-aroma-title"><h3>{aroma.name}</h3><div className="aroma-badges">{aroma.bestSeller && <span className="best-seller-badge">Mais vendido</span>}{aroma.premium && <span>Premium</span>}</div></div><p>{aroma.description}</p><div className="volume-options"><div><span>500 ml</span><strong>R$ 39,90</strong><div className="quantity-control"><button type="button" onClick={() => updateQuantity("small", -1)} aria-label={`Diminuir ${aroma.name} 500 ml`}><Minus /></button><b>{quantities.small}</b><button type="button" onClick={() => updateQuantity("small", 1)} aria-label={`Aumentar ${aroma.name} 500 ml`}><Plus /></button></div></div><div><span>1 litro</span><strong>R$ 59,90</strong><div className="quantity-control"><button type="button" onClick={() => updateQuantity("large", -1)} aria-label={`Diminuir ${aroma.name} 1 litro`}><Minus /></button><b>{quantities.large}</b><button type="button" onClick={() => updateQuantity("large", 1)} aria-label={`Aumentar ${aroma.name} 1 litro`}><Plus /></button></div></div></div><button type="button" className="add-aroma-button" onClick={addSelected} disabled={!quantities.small && !quantities.large}>Adicionar ao carrinho <ShoppingCart /></button></div>
