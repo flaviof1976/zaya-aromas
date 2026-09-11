@@ -537,7 +537,7 @@ h1 em, h2 em { color: #d7ba7b; font-style: italic; }
 .dark-aroma-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; }
 .dark-aroma-card { overflow: hidden; background: #0a1714; border: 1px solid #29423b; border-radius: .65rem; color: #f6eddf; transition: border-color .2s ease, transform .2s var(--ease-out), box-shadow .2s ease; }
 .dark-aroma-card:hover { border-color: #b9934d; transform: translateY(-4px); box-shadow: 0 11px 25px rgba(0,0,0,.22); }
-.dark-aroma-image { height: 93px; position: relative; background-image: url('/manus-storage/zaya-botanical_c21f8295.jpg'); background-size: cover; background-position: center; }
+.dark-aroma-image { height: 93px; position: relative; background-image: url('/images/zaya-botanical.jpg'); background-size: cover; background-position: center; }
 .aroma-image-bamboo { background-position: 35% 40%; filter: hue-rotate(25deg) saturate(.9); }
 .aroma-image-clean { background-position: 70% 70%; filter: grayscale(.15) brightness(1.1); }
 .aroma-image-cotton { background-position: 90% 90%; }
