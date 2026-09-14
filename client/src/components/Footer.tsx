@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import "./Footer.css";
 
 const WHATSAPP_URL = "https://wa.me/5537999929748?text=";
 
