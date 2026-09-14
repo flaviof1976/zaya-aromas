@@ -13,8 +13,8 @@ export default function PrivacyPolicy() {
       <p><strong>Última atualização:</strong> 14 de setembro de 2026</p>
       <h2>1. Controlador</h2>
       <p>A Zaya Aromas Premium, de titularidade de Flávio Ferreira, inscrita no CNPJ sob nº 34.987.321/0001-09, é responsável pelo tratamento dos dados pessoais realizado por meio deste site.</p>
-      <p>Endereço: Rua das Acácias, 245, Bairro Centro, Divinópolis - MG, CEP 35500-123.</p>
-      <p>E-mail: contato@zayaaromas.com.br<br />WhatsApp: (37) 9 9992-9748</p>
+      <p>Endereço: Rua José Pio da Fonseca, 521, Orion, Divinópolis - MG.</p>
+      <p>E-mail: zayaaromaspremium@gmail.com<br />WhatsApp: (37) 9 9992-9748</p>
       <h2>2. Dados tratados</h2>
       <p>Podemos tratar informações fornecidas voluntariamente pelo usuário durante o contato com a Zaya, além de informações técnicas de navegação, como páginas acessadas, dispositivo e dados relacionados à utilização do site.</p>
       <h2>3. Google Analytics</h2>
@@ -30,11 +30,11 @@ export default function PrivacyPolicy() {
       <p>A Zaya adota medidas técnicas e administrativas razoáveis para proteger os dados pessoais contra acessos não autorizados, perda, alteração ou divulgação indevida.</p>
       <h2>8. Direitos do titular</h2>
       <p>Nos termos da legislação aplicável, especialmente da Lei Geral de Proteção de Dados Pessoais (LGPD), o titular poderá solicitar, conforme aplicável, confirmação da existência de tratamento, acesso, correção, atualização, eliminação e outras providências previstas em lei.</p>
-      <p>As solicitações podem ser encaminhadas para:<br /><strong>contato@zayaaromas.com.br</strong></p>
+      <p>As solicitações podem ser encaminhadas para:<br /><strong>zayaaromaspremium@gmail.com</strong></p>
       <h2>9. Alterações desta política</h2>
       <p>Esta política poderá ser atualizada para refletir alterações na operação da Zaya, nos serviços utilizados ou na legislação aplicável.</p>
       <h2>10. Contato</h2>
-      <p>Para dúvidas sobre privacidade ou tratamento de dados pessoais, entre em contato pelo e-mail contato@zayaaromas.com.br ou pelo WhatsApp (37) 9 9992-9748.</p>
+      <p>Para dúvidas sobre privacidade ou tratamento de dados pessoais, entre em contato pelo e-mail zayaaromaspremium@gmail.com ou pelo WhatsApp (37) 9 9992-9748.</p>
     </main>
   );
 }
