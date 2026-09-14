@@ -8,24 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDVPB8ZR5C"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-PDVPB8ZR5C');
-      document.addEventListener('click', function(event) {
-        const link = event.target.closest('a[href*="wa.me/"]');
-        if (link) {
-          gtag('event', 'whatsapp_click', {
-            link_url: link.href,
-            transport_type: 'beacon'
-          });
-        }
-      });
-    </script>
-
     <title>Zaya Aromas Premium | Aromatizantes para Ambientes</title>
     <meta name="description" content="Zaya Aromas Premium: aromatizantes e fragrâncias sofisticadas para casa e ambientes, com entrega grátis acima de R$ 50 em Divinópolis." />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -61,20 +43,9 @@
             "url": "https://www.zayaaromas.com.br/",
             "description": "Aromatizantes e fragrâncias sofisticadas para casa e ambientes.",
             "email": "zayaaromaspremium@gmail.com",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Rua José Pio da Fonseca, 521",
-              "addressLocality": "Divinópolis",
-              "addressRegion": "MG",
-              "addressCountry": "BR"
-            },
+            "address": { "@type": "PostalAddress", "streetAddress": "Rua José Pio da Fonseca, 521", "addressLocality": "Divinópolis", "addressRegion": "MG", "addressCountry": "BR" },
             "areaServed": { "@type": "City", "name": "Divinópolis" },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+55-37-99992-9748",
-              "contactType": "customer service",
-              "availableLanguage": "Portuguese"
-            }
+            "contactPoint": { "@type": "ContactPoint", "telephone": "+55-37-99992-9748", "contactType": "customer service", "availableLanguage": "Portuguese" }
           },
           {
             "@type": "ItemList",
