@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       <h1>Política de Privacidade</h1>
       <p><strong>Última atualização:</strong> 14 de setembro de 2026</p>
       <h2>1. Controlador</h2>
-      <p>A Zaya Aromas Premium, de titularidade de Flávio Ferreira, inscrita no CNPJ sob nº 34.987.321/0001-09, é responsável pelo tratamento dos dados pessoais realizado por meio deste site.</p>
+      <p>A Zaya Aromas Premium, de titularidade de Flávio Ferreira, inscrita no CNPJ sob nº 08.204.152/0001-18, é responsável pelo tratamento dos dados pessoais realizado por meio deste site.</p>
       <p>Endereço: Rua José Pio da Fonseca, 521, Orion, Divinópolis - MG.</p>
       <p>E-mail: zayaaromaspremium@gmail.com<br />WhatsApp: (37) 9 9992-9748</p>
       <h2>2. Dados tratados</h2>
