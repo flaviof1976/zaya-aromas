@@ -1,6 +1,9 @@
 {
   "buildCommand": "pnpm run build",
   "outputDirectory": "dist/public",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
