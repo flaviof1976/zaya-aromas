@@ -12,7 +12,7 @@ export default function Terms() {
       <h1>Termos de Uso e Condições de Compra</h1>
       <p><strong>Última atualização:</strong> 14 de setembro de 2026</p>
       <h2>1. Identificação</h2>
-      <p>Este site é operado pela Zaya Aromas Premium, de titularidade de Flávio Ferreira, inscrita no CNPJ sob nº 34.987.321/0001-09.</p>
+      <p>Este site é operado pela Zaya Aromas Premium, de titularidade de Flávio Ferreira, inscrita no CNPJ sob nº 08.204.152/0001-18.</p>
       <p>Endereço: Rua José Pio da Fonseca, 521, Orion, Divinópolis - MG.<br />E-mail: zayaaromaspremium@gmail.com<br />WhatsApp: (37) 9 9992-9748</p>
       <h2>2. Aceitação</h2>
       <p>Ao acessar este site ou realizar um pedido, o usuário declara que leu e concorda com estes Termos de Uso e Condições de Compra, bem como com a Política de Privacidade.</p>
