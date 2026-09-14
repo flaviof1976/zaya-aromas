@@ -26,6 +26,7 @@ export default function Footer({ checkoutHref }: { checkoutHref: string }) {
           <a href="/politica-de-privacidade">Política de Privacidade <ArrowRight /></a>
           <a href="/termos-de-uso">Termos de Uso <ArrowRight /></a>
           <a href="/trocas-e-devolucoes">Trocas e Devoluções <ArrowRight /></a>
+          <a href="/politica-de-cookies">Política de Cookies <ArrowRight /></a>
         </div>
       </div>
       <div className="container dark-footer-bottom">
