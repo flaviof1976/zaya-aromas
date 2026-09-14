@@ -13,7 +13,7 @@ export default function Terms() {
       <p><strong>Última atualização:</strong> 14 de setembro de 2026</p>
       <h2>1. Identificação</h2>
       <p>Este site é operado pela Zaya Aromas Premium, de titularidade de Flávio Ferreira, inscrita no CNPJ sob nº 34.987.321/0001-09.</p>
-      <p>Endereço: Rua das Acácias, 245, Bairro Centro, Divinópolis - MG, CEP 35500-123.<br />E-mail: contato@zayaaromas.com.br<br />WhatsApp: (37) 9 9992-9748</p>
+      <p>Endereço: Rua José Pio da Fonseca, 521, Orion, Divinópolis - MG.<br />E-mail: zayaaromaspremium@gmail.com<br />WhatsApp: (37) 9 9992-9748</p>
       <h2>2. Aceitação</h2>
       <p>Ao acessar este site ou realizar um pedido, o usuário declara que leu e concorda com estes Termos de Uso e Condições de Compra, bem como com a Política de Privacidade.</p>
       <h2>3. Produtos e informações</h2>
@@ -44,7 +44,7 @@ export default function Terms() {
       <h2>13. Legislação aplicável</h2>
       <p>Estes Termos são interpretados de acordo com a legislação brasileira, especialmente as normas aplicáveis às relações de consumo e ao comércio eletrônico.</p>
       <h2>14. Contato</h2>
-      <p>Para dúvidas, pedidos, cancelamentos ou solicitações relacionadas à compra, entre em contato pelo e-mail contato@zayaaromas.com.br ou pelo WhatsApp (37) 9 9992-9748.</p>
+      <p>Para dúvidas, pedidos, cancelamentos ou solicitações relacionadas à compra, entre em contato pelo e-mail zayaaromaspremium@gmail.com ou pelo WhatsApp (37) 9 9992-9748.</p>
     </main>
   );
 }
