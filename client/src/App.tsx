@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Returns from "./pages/Returns";
 import Terms from "./pages/Terms";
 
 function Router() {
@@ -14,6 +15,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/politica-de-privacidade"} component={PrivacyPolicy} />
       <Route path={"/termos-de-uso"} component={Terms} />
+      <Route path={"/trocas-e-devolucoes"} component={Returns} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
