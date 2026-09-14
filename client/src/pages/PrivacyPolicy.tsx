@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+
 export default function PrivacyPolicy() {
+  useEffect(() => {
+    document.title = "Política de Privacidade | Zaya Aromas Premium";
+    const robots = document.querySelector('meta[name="robots"]');
+    robots?.setAttribute("content", "noindex, follow");
+  }, []);
+
   return (
     <main className="container" style={{ padding: "60px 20px", maxWidth: 900, margin: "0 auto" }}>
       <h1>Política de Privacidade</h1>
