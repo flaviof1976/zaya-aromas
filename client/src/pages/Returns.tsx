@@ -14,7 +14,7 @@ export default function Returns() {
       <h2>1. Direito de arrependimento</h2>
       <p>Nas compras realizadas fora do estabelecimento comercial, o consumidor poderá desistir da compra no prazo legal de 7 dias, contado conforme a legislação aplicável, sem necessidade de apresentar justificativa.</p>
       <h2>2. Como solicitar</h2>
-      <p>Para exercer o direito de arrependimento ou solicitar uma devolução, entre em contato com a Zaya pelo WhatsApp (37) 9 9992-9748 ou pelo e-mail contato@zayaaromas.com.br, informando o pedido e a solicitação desejada.</p>
+      <p>Para exercer o direito de arrependimento ou solicitar uma devolução, entre em contato com a Zaya pelo WhatsApp (37) 9 9992-9748 ou pelo e-mail zayaaromaspremium@gmail.com, informando o pedido e a solicitação desejada.</p>
       <h2>3. Devolução do produto</h2>
       <p>Após o contato, a Zaya orientará o consumidor sobre a forma de devolução do produto. Quando aplicável, o produto deverá ser disponibilizado para devolução de acordo com as instruções fornecidas pela empresa.</p>
       <h2>4. Reembolso</h2>
@@ -24,7 +24,7 @@ export default function Returns() {
       <h2>6. Trocas</h2>
       <p>Solicitações de troca serão avaliadas conforme o motivo apresentado, as condições do produto e a legislação aplicável. O atendimento será realizado pelos canais oficiais da Zaya.</p>
       <h2>7. Atendimento</h2>
-      <p>E-mail: contato@zayaaromas.com.br<br />WhatsApp: (37) 9 9992-9748</p>
+      <p>E-mail: zayaaromaspremium@gmail.com<br />WhatsApp: (37) 9 9992-9748</p>
       <p>Esta política complementa os <a href="/termos-de-uso">Termos de Uso e Condições de Compra</a> e a <a href="/politica-de-privacidade">Política de Privacidade</a>.</p>
     </main>
   );
