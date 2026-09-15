@@ -1,0 +1,103 @@
+name: Optimize images
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install image optimizer
+        run: npm install --no-save sharp@0.33.5
+
+      - name: Generate optimized WebP assets
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const sharp = require('sharp');
+
+          const dir = 'client/public/images';
+          const assets = [
+            ['aroma-bamboo.png', 900, 82],
+            ['aroma-roupa-limpa.png', 900, 82],
+            ['aroma-flor-algodao.png', 900, 82],
+            ['aroma-capim-limao.png', 900, 82],
+            ['aroma-lavanda.png', 900, 82],
+            ['aroma-lavanda-francesa.png', 900, 82],
+            ['aroma-figo-negro.png', 900, 82],
+            ['aroma-mamae-bebe.png', 900, 82],
+            ['zaya-hero-dark.png', 1920, 80],
+          ];
+
+          (async () => {
+            for (const [file, maxWidth, quality] of assets) {
+              const input = path.join(dir, file);
+              const output = path.join(dir, file.replace(/\.(png|jpg)$/i, '.webp'));
+              await sharp(input)
+                .resize({ width: maxWidth, withoutEnlargement: true })
+                .webp({ quality })
+                .toFile(output);
+              console.log(`Optimized ${file} -> ${path.basename(output)}`);
+            }
+          })().catch((err) => { console.error(err); process.exit(1); });
+          NODE
+
+      - name: Switch source references to WebP
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          replacements = {
+            'aroma-bamboo.png': 'aroma-bamboo.webp',
+            'aroma-roupa-limpa.png': 'aroma-roupa-limpa.webp',
+            'aroma-flor-algodao.png': 'aroma-flor-algodao.webp',
+            'aroma-capim-limao.png': 'aroma-capim-limao.webp',
+            'aroma-lavanda.png': 'aroma-lavanda.webp',
+            'aroma-lavanda-francesa.png': 'aroma-lavanda-francesa.webp',
+            'aroma-figo-negro.png': 'aroma-figo-negro.webp',
+            'aroma-mamae-bebe.png': 'aroma-mamae-bebe.webp',
+            'zaya-hero-dark.png': 'zaya-hero-dark.webp',
+          }
+
+          for file in [Path('client/src/pages/Home.tsx'), Path('client/index.html')]:
+            text = file.read_text(encoding='utf-8')
+            for old, new in replacements.items():
+              text = text.replace(old, new)
+            file.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Remove oversized source assets
+        run: |
+          rm -f \
+            client/public/images/aroma-bamboo.png \
+            client/public/images/aroma-roupa-limpa.png \
+            client/public/images/aroma-flor-algodao.png \
+            client/public/images/aroma-capim-limao.png \
+            client/public/images/aroma-lavanda.png \
+            client/public/images/aroma-lavanda-francesa.png \
+            client/public/images/aroma-figo-negro.png \
+            client/public/images/aroma-mamae-bebe.png \
+            client/public/images/zaya-hero-dark.png
+
+      - name: Commit optimized assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add client/public/images client/src/pages/Home.tsx client/index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "perf: replace oversized images with WebP [skip ci]"
+          git push
