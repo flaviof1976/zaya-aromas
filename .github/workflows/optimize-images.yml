@@ -21,7 +21,7 @@ jobs:
           node-version: 20
 
       - name: Install image optimizer
-        run: npm install --no-save sharp@0.33.5
+        run: npm install --no-save --legacy-peer-deps sharp@0.33.5
 
       - name: Generate optimized WebP assets
         run: |
