@@ -3,20 +3,20 @@ import { ArrowRight, Check, ChevronDown, ChevronUp, Minus, Plus, ShoppingCart, T
 import Footer from "../components/Footer";
 
 const LOGO = "/images/logo.png";
-const HERO_IMAGE = "/images/zaya-hero-dark.png";
+const HERO_IMAGE = "/images/zaya-hero-dark.webp";
 const BOTANICAL_IMAGE = "/images/zaya-botanical.jpg";
 const WHATSAPP_NUMBER = "5537999929748";
 const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}?text=`;
 
 const aromas = [
-  { name: "Bamboo", description: "Fresco, verde, elegante e sofisticado.", color: "#7e9e62", image: "bamboo", asset: "/images/aroma-bamboo.png" },
-  { name: "Roupa Limpa", description: "Cheiro de limpeza, conforto e roupa recém-lavada.", color: "#d7d7cf", image: "clean", bestSeller: true, asset: "/images/aroma-roupa-limpa.png" },
-  { name: "Flor de Algodão", description: "Delicado, suave, aconchegante e limpo.", color: "#bca89b", image: "cotton", bestSeller: true, asset: "/images/aroma-flor-algodao.png" },
-  { name: "Capim-Limão", description: "Cítrico, refrescante e energizante.", color: "#aebd62", image: "lemon", bestSeller: true, asset: "/images/aroma-capim-limao.png" },
-  { name: "Lavanda", description: "Suave, relaxante e clássico.", color: "#8b76a8", image: "lavender", asset: "/images/aroma-lavanda.png" },
-  { name: "Lavanda Francesa", description: "Floral, elegante e envolvente.", color: "#80669f", image: "lavender-two", premium: true, asset: "/images/aroma-lavanda-francesa.png" },
-  { name: "Figo Negro", description: "Intenso, sofisticado e marcante.", color: "#765a55", image: "fig", premium: true, asset: "/images/aroma-figo-negro.png" },
-  { name: "Mamãe e Bebê", description: "Suave, acolhedor e delicadamente confortável.", color: "#d8c2b2", image: "mamae-bebe", asset: "/images/aroma-mamae-bebe.png" },
+  { name: "Bamboo", description: "Fresco, verde, elegante e sofisticado.", color: "#7e9e62", image: "bamboo", asset: "/images/aroma-bamboo.webp" },
+  { name: "Roupa Limpa", description: "Cheiro de limpeza, conforto e roupa recém-lavada.", color: "#d7d7cf", image: "clean", bestSeller: true, asset: "/images/aroma-roupa-limpa.webp" },
+  { name: "Flor de Algodão", description: "Delicado, suave, aconchegante e limpo.", color: "#bca89b", image: "cotton", bestSeller: true, asset: "/images/aroma-flor-algodao.webp" },
+  { name: "Capim-Limão", description: "Cítrico, refrescante e energizante.", color: "#aebd62", image: "lemon", bestSeller: true, asset: "/images/aroma-capim-limao.webp" },
+  { name: "Lavanda", description: "Suave, relaxante e clássico.", color: "#8b76a8", image: "lavender", asset: "/images/aroma-lavanda.webp" },
+  { name: "Lavanda Francesa", description: "Floral, elegante e envolvente.", color: "#80669f", image: "lavender-two", premium: true, asset: "/images/aroma-lavanda-francesa.webp" },
+  { name: "Figo Negro", description: "Intenso, sofisticado e marcante.", color: "#765a55", image: "fig", premium: true, asset: "/images/aroma-figo-negro.webp" },
+  { name: "Mamãe e Bebê", description: "Suave, acolhedor e delicadamente confortável.", color: "#d8c2b2", image: "mamae-bebe", asset: "/images/aroma-mamae-bebe.webp" },
 ];
 
 type CartItem = { id: string; name: string; volume: string; price: number; qty: number };
